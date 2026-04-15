@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Portafolio</title>
+
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<header>
+  <p class="linea1">Diseño gráfico</p>
+  <p class="linea2">Identidad Visual</p>
+  <p class="linea3">Comunicación</p>
+  <h1 class="logo">& Branding</h1>
+  <p class="sub">Portafolio de diseño</p>
+</header>
+
+<!-- VISOR -->
+<div class="visor">
+  <button class="flecha izquierda">&#10094;</button>
+
+  <div class="marco">
+    <img id="imagen" src="img/port00.png">
+  </div>
+
+  <button class="flecha derecha">&#10095;</button>
+</div>
+
+<!-- BOTONES COLOR -->
+<div class="colores">
+  <div class="color c1" onclick="abrirPopup(0)"></div>
+  <div class="color c2" onclick="abrirPopup(1)"></div>
+  <div class="color c3" onclick="abrirPopup(2)"></div>
+</div>
+
+<!-- POPUP -->
+<div id="popup" class="popup">
+  <span class="cerrar-popup" onclick="cerrarPopup()">×</span>
+  <img id="popup-img" src="">
+</div>
+<!-- CONTACTO -->
+<footer class="footer">
+
+  <h3 class="footer-titulo">CONTACTO</h3>
+
+  <!-- TEL -->
+  <p class="footer-telefono">
+    <img src="img/icono-tel.png" class="icono-mini">
+    <span class="telefono-texto">+549 342 58 43447</span>
+  </p>
+
+  <!-- ICONOS -->
+  <div class="footer-iconos">
+
+    <a href="https://wa.me/5493425843447" target="_blank">
+      <img src="img/icono-wsp.png" class="icono-red">
+    </a>
+
+    <a href="mailto:cicloscinph@gmail.com">
+      <img src="img/icono-mail.png" class="icono-red">
+    </a>
+
+  </div>
+
+</footer>
+
+<div class="footer-barra"></div>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
